@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment (proem Phearom)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="jquery-3.5.1.js"></script>
+
+<style>
+
+.contain{
+    background: rgb(238, 238, 238);
+    font-family: 'Khmer OS Bokor';
+   }
+.manu​ h5{
+    margin: 5px 110px 0 100px;
+			padding: 6px 0 0 5px;
+			background-color: #ffffff;
+      box-sizing: border-box;
+			height: 200px;
+			font-family: 'khmer os siemreap';
+      font-size: 11;
+      border: 1px solid gray;
+      
+}
+.font div{
+   font-family: 'khmer os siemreap';
+   font-size: 12;
+}
+    table{
+      font-family: khmer os siemreap;
+      width: 100%;
+      text-decoration: none;
+      border-top: 1px solid #000000;
+      border-left: 1px solid #000000;
+      border-right: 1px solid #000000;
+      border-spacing: 0;
+    }
+    td{
+      border-bottom: 1px solid #000000;
+      
+    }
+    td:nth-child(1){
+      width: 10%;
+    }
+    td:nth-child(2){
+      width: 10%;
+    }
+    td:nth-child(3){
+      width: 25%;
+    }
+    td:nth-child(4){
+      width: 25%;
+    }
+    td:nth-child(5){
+      width: 30%;
+    }
+.Button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.Button1:hover {
+  background-color: rgb(106, 255, 130); 
+  color: black; 
+  border: 2px solid #969696;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+</head>
+<body>
+ <div class="contain">
+<div class="container mt-3">
+  <h1>$ប្រព័ន្ធបង់រំលោះ</h1>
+<div class="font">
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" >ប្រាក់កម្ចី​​៖</span>
+      </div>
+      <input type="number" id="money" class="form-control"​ placeholder="ប្រាក់ដើម" >
+    </div>
+  </form>
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">អត្រាការប្រាក់ក្នុងមួយឆ្នាំ ៖</span>
+      </div>
+      <input type="number" id="rate" class="form-control"placeholder="អត្រាការប្រាក់" >
+    </div>
+  </form>
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">រយៈពេលបង់រំលោះ (គិតជាឆ្នាំ)​ ៖</span>
+      </div>
+      <select  id="times"  class="form-control"​ >
+        <option value="None">សូមជ្រើសរើសរយៈពេល</option>
+        <option value="1">១</option>
+        <option value="2">២</option>
+        <option value="3">៣</option>
+        <option value="4">៤</option>
+        <option value="5">៥</option>
+        <option value="6" >៦</option>
+        <option value="7">៧</option>
+        <option value="8">៨</option>
+        <option value="9">៩</option>
+        <option value="10">១០</option>
+        <option value="11">១១</option>
+        <option value="12">១១</option>
+      </select>
+    </div>
+  </form>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">រំលោះជា​ ៖</span>
+    </div>
+    <select  id="payment"  class="form-control"​>
+      <option value="None">ជ្រើសរើសការបង់ប្រាក់</option>
+      ​<option value="year">បង់ប្រចាំឆ្នាំ</option>
+    ​​  <option value="month">បង់ប្រចាំខែ</option>
+  </select>
+  </div>
+</form>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">កាលបរិច្ឆេទចាប់ផ្តើមបង់ប្រាក់ ៖</span>
+  </div>
+  <input type="date" id="dates" class="form-control"  >
+</div>
+</form> 
+</div>
+<div  class="input-group-prepend">
+ <button class="Button Button1" id="sub" >បង្ហាញតារាងបង់ប្រាក់</button> 
+</div>
+</div> 
+<hr>
+</div>
+<div class="manu" >
+<div class="input-group-prepend">
+<div class="container mt-3">
+<div class="input-group-text">
+<div class="contain">
+<h5>តារាងបង់ប្រាក់</h5>
+</div>
+</div>
+<div class="font">
+<div>ប្រាក់កម្ជី ៖<span id="ShMoney"> N/A</span></div>
+<div>អត្រាការប្រាក់(ក្នុងមួយឆ្នាំ)៖<span id="ShRate"> N/A </span>ភាគរយ</div>
+<div>រយៈពេលបង់រំលោះ(គិតជាឆ្នាំ)៖<span id="ShTimes"> N/A</span>​ឆ្នាំ</div>
+<div>បង់ប្រចាំឆ្នាំ​៖​<span id="discPayment" > N/A ​</span></div>
+<div>កាលបរិច្ឆេទ ៖ <span id="Shdates"> N/A</span>
+</div>
+</div>
+<table id="TableShow" ></table>
+</div>
+</div>
+<script>
+     $(document).ready(function () {
+      $('#sub').click(function () {
+        var money = $('#money').val();
+        var rate = $('#rate').val();
+        var times = $('#times').val();
+        var payment = $('#payment').val();
+        var dates = $('#dates').val();
+        $('#ShMoney').text(money);
+        $('#ShRate').text(rate);
+        $('#ShTimes').text(times);
+        $('#Shdates').text(dates);
+        $('#TableShow').show();
+        var showTime;
+        
+        var rateMoney = ((money * rate)/100)*times;
+        var rateTotal = Number(money) + Number(rateMoney);
+        if (payment=="month") {
+          showTime = 'ខែ';
+          times *=12;
+          $('#discPayment').text(showTime);
+        }else if (payment=="year") {
+          showTime ='ឆ្នាំ';
+          $('#discPayment').text(showTime);
+        }
+        var rateIn = Number(rateMoney) /times;
+        var moneyIn = Number(rateTotal) /times;
+        var rateCount = rateTotal - moneyIn;
+        var tableShow ='<tr>';
+        tableShow +='<td>ល.រ </td>';
+        tableShow +='<td>'+showTime+ 'ទី</td>';
+        tableShow +='<td>ប្រាក់ត្រូវបង់(ក្នុងមួយ'+showTime +')</td>';
+        tableShow +='<td>ការប្រាក់(ក្នុងមួយ'+showTime +')</td>';
+        tableShow +='<td>ប្រាក់ដើមនៅសល់</td>';
+        tableShow +='</tr>';
+        for (var i = 1; i <= times; i++) {
+        tableShow +='<tr>';
+        tableShow +='<td>'+i+'</td>';
+        tableShow +='<td>'+i+'</td>';
+        tableShow +='<td>'+moneyIn+'</td>';
+        tableShow +='<td>'+rateIn+'</td>';
+        tableShow +='<td>'+rateCount+'</td>';
+        tableShow +='</tr>';
+        rateCount -=moneyIn;
+        }
+        tableShow +='<tr>';
+        tableShow +='<td colspan="2"></td>';
+        tableShow +='<td>សរុបប្រាក់បង់$ '+rateTotal+'</td>';
+        tableShow +='<td colspan="2">សរុបការប្រាក់$ '+rateMoney+'</td>';
+        tableShow +='</tr>';
+        $('#TableShow').html(tableShow);
+      });
+    });
+</script>
+</body>
+</html>
+
